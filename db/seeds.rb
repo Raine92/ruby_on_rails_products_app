@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+# Luo oletuskäyttäjä, jos ei vielä ole olemassa
+User.find_or_create_by!(email_address: "testi@testi.fi") do |user|
+  user.password = "Salasana123"
+  user.password_confirmation = "Salasana123"
+end
