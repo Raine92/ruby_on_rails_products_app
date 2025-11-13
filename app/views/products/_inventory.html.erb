@@ -1,0 +1,13 @@
+<div class="inventory">
+  <%# Safe partial for product inventory. If your Product model has a stock/inventory
+      attribute or association, adjust this to show real data. This avoids
+      ActionView::MissingTemplate when the partial is referenced. %>
+
+  <% if local_assigns[:product].respond_to?(:inventory) && product.inventory.present? %>
+    <p>Inventory: <%= product.inventory %></p>
+  <% elsif local_assigns[:product].respond_to?(:stock) && product.stock.present? %>
+    <p>Stock: <%= product.stock %></p>
+  <% else %>
+    <p>Inventory information not available.</p>
+  <% end %>
+</div>

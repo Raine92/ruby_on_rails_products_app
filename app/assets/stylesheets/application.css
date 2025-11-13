@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
+ *
+ * Consider organizing styles into separate files for maintainability.
+ */
+
+/* Include Action Text (Trix) editor styles so the toolbar and editor are styled correctly */
+@import "actiontext";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+nav {
+  justify-content: flex-end;
+  display: flex;
+  font-size: 0.875em;
+  gap: 0.5rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+nav a {
+  display: inline-block;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.alert,
+.error {
+  color: red;
+}
+
+.notice {
+  color: green;
+}
+
+section.product {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+section.product img {
+  border-radius: 8px;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/* Better product page styling */
+.back-link {
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: #4a2fbd;
+}
+
+.product {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.product-image {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.product-info {
+  flex: 1 1 0;
+}
+
+.product-info h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-description {
+  margin-bottom: 1rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+.inventory {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.product-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button.secondary { border-color: #4a2fbd; color: #4a2fbd }
+.button.danger { border-color: #d9534f; color: #d9534f }
