@@ -15,5 +15,5 @@ COPY . .
 # Expondoidaan portti
 EXPOSE 3000
 
-# Käynnistetään Rails development-tilassa
-CMD ["bin/rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+# Käynnistetään Rails development-tilassa ja ajetaan migraatiot automaattisesti
+CMD ["bash", "-c", "bin/rails db:prepare && bin/rails server -b 0.0.0.0 -p 3000"]
