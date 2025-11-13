@@ -40,11 +40,14 @@ class ProductsController < ApplicationController
   end
 
   private
-    def set_product
-      @product = Product.find(params[:id])
-    end
 
-    def product_params
-      params.expect(product: [ :name, :description, :featured_image ])
-    end
+  def set_product
+    @product = Product.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  # Use require/permit so nested params are handled correctly.
+  def product_params
+    params.require(:product).permit(:name, :description, :featured_image)
+  end
 end

@@ -29,3 +29,27 @@
 !/tmp/storage/.keep
 
 /public/assets
+
+# Editor / OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruby / Bundler
+/vendor/bundle
+.byebug_history
+/.ruby-version
+
+# Node
+node_modules/
+
+# Secrets (do not commit keys)
+/config/master.key
+
+# SQLite and temp DB files (if any slipped through)
+storage/*.sqlite3
+storage/*.sqlite3-shm
+storage/*.sqlite3-wal
+
