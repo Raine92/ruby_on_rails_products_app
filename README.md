@@ -1,24 +1,20 @@
-# README
+# 1. LATAA KUVA DOCKER HUBISTA
+## Avaa komentokehtoe (CMD / PowerShell / bash)
+```bash
+docker pull raine1992/rails_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
 
-Things you may want to cover:
 
-* Ruby version
+# 2. AJA KONTTI
 
-* System dependencies
+```bash
+docker run -p 3000:3000 raine1992/rails_app
 
-* Configuration
+```
 
-* Database creation
+# MENE OSOITTEESEEN:
+```bash
+http://localhost:3000
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
