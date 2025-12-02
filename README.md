@@ -18,10 +18,14 @@ docker run -p 3000:3000 raine1992/rails_app
 
 ```
 
-### 3. AVAA SOVELLUS SELAIMESSA:
+## 3. AVAA SOVELLUS SELAIMESSA:
 
 
 ```bash
 http://localhost:3000
 
 ```
+
+## 4. JOS HALUAT KOKEILLA, KIRJAUDU SISÄÄN
+### testi@testi.fi
+### Salasana123
